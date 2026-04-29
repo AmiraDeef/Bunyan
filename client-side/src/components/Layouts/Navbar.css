@@ -1,0 +1,9 @@
+.info span{
+  color: var(--secondary);
+}
+.info h1{
+    color: var(--primary);
+}
+.login{
+    background: var(--secondary);
+}
