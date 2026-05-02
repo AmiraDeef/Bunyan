@@ -16,7 +16,7 @@ export default function Navbar() {
                         <FontAwesomeIcon icon={faBell} />
 
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Supper Admin
                             </button>
                             <ul class="dropdown-menu dropdown-menu-dark">
