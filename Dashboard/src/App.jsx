@@ -4,7 +4,9 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Users from './pages/Users/Users';
 import NotFound from './pages/NotFond/NotFound';
 import Layout from './components/layout/Layout';
+import Developers from './pages/Developers/Developers';
 import './App.css';
+
 
 
 
@@ -12,7 +14,7 @@ function App() {
 
   return (
     <>
-      <Layout></Layout>
+      
 
       <Routes>
 
@@ -20,6 +22,7 @@ function App() {
       
         <Route index element={<Dashboard />} />
         <Route path="users" element={<Users />} />
+           <Route path="/developers" element={<Developers />} />
         <Route path="*" element={<NotFound />} />
       </Route>
       </Routes>

@@ -1,9 +1,17 @@
 .sidebar{
     background-color: #00315E;
+    padding-top: 20px;
     
 }
 .sidebar li{
-    text-decoration: none;
-    list-style: none;
    
+    list-style: none;
+    padding-bottom: 15px;
+    
+   
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }

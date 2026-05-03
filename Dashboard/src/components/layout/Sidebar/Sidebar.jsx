@@ -6,16 +6,19 @@ export default function Sidebar() {
     return (
         <>
             <aside className={`contianer ${Style.sidebar}`}>
-                <div className='d-flex flex-column gap-3 p-4 text-white text-decoration-none '>
+                <div className='d-flex flex-column gap-3 p-4 text-white text-decoration-none vh-100 '>
                     <ul>
                         <li>
                             <NavLink to="/users">USER MANGMENT</NavLink>
                         </li>
                         <li>
-                            <NavLink to ="">DEVELOPERS MANGMENT</NavLink>
+                            <NavLink to="">Project MANGMENT</NavLink>
                         </li>
                         <li>
-                            <NavLink to ="">WEBSITE CMS </NavLink>
+                            <NavLink to="/developers">DEVELOPERS MANGMENT</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="">WEBSITE CMS </NavLink>
                         </li>
                         <li>
                             <NavLink to="">Live Chat</NavLink>

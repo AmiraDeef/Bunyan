@@ -5,14 +5,14 @@ import { Outlet } from 'react-router-dom'
 export default function Layout() {
     return (
         <>
-            <Navbar></Navbar>
-            <div className="row d-flex">
+            <Navbar role="Super Admin"></Navbar>
+            <div className="row d-flex ">
 
-                <div className="col-3">
+                <div className="col-2">
                     <Sidebar></Sidebar>
 
                 </div>
-                <main className="col-9"><Outlet/></main>
+                <main className="col-9"><Outlet /></main>
             </div>
 
         </>
