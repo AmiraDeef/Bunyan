@@ -12,13 +12,12 @@ export default function Navbar({ role }) {
                     <div className={Style.NavLogo} className='d-flex px-5'>
                         <img src={Logo} alt="logo" />
                     </div>
-                    <div className='d-flex px-5 align-items-center' >
+                    <div className={`d-flex px-5 align-items-center ${Style.rightSide}`} >
                         <button className="position-relative border-0  bg-transparent">  
                             <FontAwesomeIcon icon={faBell}/>
 
                             <span className={`position-absolute top-20 start-80 translate-middle badge rounded-pill ${Style.badgeNoti}`}>
                                0
-                                <span className="visually-hidden">unread messages</span>
                             </span></button>
 
 
