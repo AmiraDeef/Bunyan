@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 
-function TableDashboard({header,title}) {
+function TableDashboard({header}) {
     return (
 
         <><div className="container">
 
         <div className="header d-flex justify-content-between mb-3">
 
-            <h3>{header}</h3>
-            <Link to={'add'} className="btn btn-primary ">Add new {title}</Link>
+            <h3>{header}s</h3>
+            <Link to={'add'} className="btn btn-primary ">Add new {header}</Link>
         </div>
             <table className="table">
                 <thead>

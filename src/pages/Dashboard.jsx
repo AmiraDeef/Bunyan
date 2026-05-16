@@ -18,20 +18,20 @@ function Dashboard() {
                     <Routes>
                         <Route path="/" element={<StatusPage/>} />
                         <Route path="/users" element={<UserPage />} >
-                           <Route index element={<TableDashboard header="Users" title="user"/>} />
+                           <Route index element={<TableDashboard header="User" />} />
                            <Route path="add" element={<FormalDashboard/>} />
 
                         </Route>
 
                         <Route path="/projects" element={<ProjectPage/>} >
-                           <Route index element={<TableDashboard header="Projects" title="Project"/>} />
+                           <Route index element={<TableDashboard header="Project" />} />
                            <Route path="add" element={<FormalDashboard/>} />
 
                         </Route>
 
                         
                            <Route path="/developers" element={<DeveloperPage/>} >
-                           <Route index element={<TableDashboard  header="Developers" title="Developer"/>} />
+                           <Route index element={<TableDashboard  header="Developer"/>} />
                            <Route path="add" element={<FormalDashboard/>} />
 
                         </Route>
