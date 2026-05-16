@@ -1,8 +1,12 @@
 import React from 'react'
-
+import { Outlet } from 'react-router-dom'
  function UserPage() {
   return (
-    <div>UserPage</div>
+    <section className='py-4' >
+  
+    <Outlet  />
+
+    </section>
   )
 }
 export default UserPage

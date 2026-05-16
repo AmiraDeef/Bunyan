@@ -5,6 +5,9 @@ import Sidebare from "../components/Dashborad/Sidebar/Sidebar";
 import StatusPage from "./StatusPage";
 import ProjectPage from "./ProjectPage";
 import UserPage from "./UserPage";
+import TableDashboard from "../components/ui/TableDashboard/TableDashboard";
+import FormalDashboard from "../components/ui/FormDashboard/FormalDashboard";
+import DeveloperPage from "./DeveloperPage";
 function Dashboard() {
     return (
         <>
@@ -14,9 +17,26 @@ function Dashboard() {
                 <main className="flex-grow-1">
                     <Routes>
                         <Route path="/" element={<StatusPage/>} />
-                        <Route path="/users" element={<UserPage/>} />
+                        <Route path="/users" element={<UserPage />} >
+                           <Route index element={<TableDashboard header="Users" title="user"/>} />
+                           <Route path="add" element={<FormalDashboard/>} />
 
-                        <Route path="/projects" element={<ProjectPage/>} />
+                        </Route>
+
+                        <Route path="/projects" element={<ProjectPage/>} >
+                           <Route index element={<TableDashboard header="Projects" title="Project"/>} />
+                           <Route path="add" element={<FormalDashboard/>} />
+
+                        </Route>
+
+                        
+                           <Route path="/developers" element={<DeveloperPage/>} >
+                           <Route index element={<TableDashboard  header="Developers" title="Developer"/>} />
+                           <Route path="add" element={<FormalDashboard/>} />
+
+                        </Route>
+
+                      
 
                     </Routes>
                 </main>

@@ -1,12 +1,12 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom'
- function ProjectPage() {
+
+ function DeveloperPage() {
   return (
      <section className='py-4' >
       
-        <Outlet />
+        <Outlet/>
     
         </section>
   )
 }
-export default ProjectPage
+export default DeveloperPage
