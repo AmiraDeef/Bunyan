@@ -1,9 +1,23 @@
+
+import { useOutletContext } from "react-router-dom";
+
 function FormalDashboard() {
+  const   setActive  = useOutletContext();
+    const handleInput = (e) => {
+        const text = e.target.value
+        if (text.trim()) { setActive(true) } else { setActive(false) }
+        console.log(text);
+
+
+
+    }
     return (
-        <><div className="container">  <form>
+
+        <><div className="container">
+            <form onChange={handleInput}>
                 <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Email address</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  />
                     <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div className="mb-3">
@@ -16,7 +30,7 @@ function FormalDashboard() {
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form></div>
-          
+
         </>
     )
 }

@@ -12,3 +12,9 @@
 .navItem:hover{
      background-color: rgba(255,255,255,0.25);
 }
+.badge {
+
+width: 10px;
+height: 10px;
+margin-left: auto;
+}

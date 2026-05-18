@@ -1,12 +1,17 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useOutletContext } from 'react-router-dom'
+import { useState } from 'react'
 
  function DeveloperPage() {
-  return (
-     <section className='py-4' >
-      
-        <Outlet/>
+  
+ const active=useOutletContext()
+ 
+    return (
+      <section className='py-4' >
     
-        </section>
+     <Outlet context={ active} />
+  
+      </section>
+    
   )
 }
 export default DeveloperPage
