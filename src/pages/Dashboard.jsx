@@ -5,10 +5,10 @@ import Navbar from "../components/Dashborad/Navbar/Navbar";
 import Sidebare from "../components/Dashborad/Sidebar/Sidebar";
 ;
 function Dashboard() {
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState("none");
     return (
         <>
-            <Navbar adminName="mohamed" />
+            <Navbar adminName="Amira" />
             <div className="d-flex">
                 <Sidebare active={active} />
             <main className="flex-grow-1">

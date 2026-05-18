@@ -5,8 +5,11 @@ function FormalDashboard() {
   const   setActive  = useOutletContext();
     const handleInput = (e) => {
         const text = e.target.value
-        if (text.trim()) { setActive(true) } else { setActive(false) }
+        const path=(window.location.pathname).split("/")[1]
+        if(text.trim().length > 0){setActive(path) } else{setActive("none")}
         console.log(text);
+        console.log(path);
+
 
 
 

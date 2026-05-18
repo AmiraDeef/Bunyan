@@ -5,9 +5,9 @@ import styles from "./Sidebar.module.css"
 function Sidebar({ active }) {
     const links = [
         { icon: "fa-chart-bar", title: "Status", path: "/" },
-        { icon: "fa-users", title: "User Management", path: "/users" },
-        { icon: "fa-building", title: "Projects Management", path: "/projects" },
-        { icon: "fa-user", title: "Developer Management", path: "/developers" },
+        { icon: "fa-users", title: "User Management", path: "users" },
+        { icon: "fa-building", title: "Projects Management", path: "projects" },
+        { icon: "fa-user", title: "Developer Management", path: "developers" },
         { icon: "fa-globe", title: "CMS" },
         { icon: "fa-message", title: "Live chat", path: "" },
 
@@ -27,7 +27,9 @@ function Sidebar({ active }) {
 
                         <i className={`fa-solid ${item.icon} fs-6`}></i>
                         <span>{item.title}</span>
-                        {active  && (
+                        {console.log(active)}
+                        {
+                        active==item.path  && (
                             <span 
                                 className={`${styles.badge} position-absolute translate-middle p-2 bg-danger rounded-circle`}>
                             </span>
